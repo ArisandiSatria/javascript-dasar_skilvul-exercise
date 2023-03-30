@@ -1,0 +1,95 @@
+== Project 1
+1. Buat variabel untuk menampung input berapa jam yang ingin dikonversi
+2. 1 jam = 60 menit, 1 menit = 60 detik. Untuk mendapatkan nilai 1 jam, maka 60 detik dikalikan 60 menit yang hasilnya adalah 3600 detik. Maka, buat variabel sebagai output yang menampung input dikalikan 3600 detik.
+3. Tampilkan output
+
+
+STORE "inputHour" with number value
+STORE "convertedToSecond" with number value
+
+SET "convertedToSecond" with "inputHour" TIMES 3600
+
+SHOW "convertedToSecond"
+
+
+
+== Project 2
+1. Buat dua variabel yang menampung 2 nilai
+2. Buat percabangan yang menentukan apakah nilai pertama lebih besar dari nilai kedua, jika ya maka tampilkan nilai pertama. Begitu pula sebaliknya
+3. Jika kedua angka bernilai sama, maka tampilkan nilai pertama sama dengan nilai kedua
+
+
+STORE "firstNumber" with number value
+STORE "secondNumber" with number value
+
+IF "firstNumber" IS GREATER THAN "secondNumber" 
+	SHOW ""firstNumber" nilai terbesar"
+ELSE IF "secondNumber" IS GREATER THAN "firstNumber"
+	SHOW ""secondNumber" nilai terbesar"
+ELSE
+	SHOW "nilai pertama sama dengan nilai kedua"
+
+
+
+== Project 3
+1. Buat 2 variabel yang menampung jumlah traveler dan harga tiket pesawat
+2. Kalikan jumlah traveler dengan harga tiket pesawat
+3. Buat percabangan untuk menentukan apakah tiket yang dibeli one way atau two way.
+4. Jika one way, tampilkan hasil perkalian jumlah traveler dengan harga tiket pesawat
+5. Jika two way, hasil perkalian jumlah traveler dengan harga tiket pesawat dikalikan 2
+
+
+STORE "travelerCount" with number value
+STORE "ticketPrice" with number value
+
+SET "travelerCount" with 2
+SET "ticketPrice" with 600.000
+
+IF "one way"
+	SHOW "travelerCount" TIMES "ticketPrice"
+ELSE
+	SHOW ("travelerCount" TIMES "ticketPrice") TIMES 2
+
+
+
+=== Project 4
+1. Buat variabel yang menampung input sebagai nilai akhir, yaitu N
+2. Buat sebuah perulangan yang mana nilai awalnya adalah 1 dan nilai akhirnya adalah nilai yang diinputkan.
+3. Lakukan perulangan dengan increment 1
+
+
+STORE "N" with number value
+
+SET "N" with any number value GREATER THAN 1
+
+FOR (SET i with 1; i LESS THAN EQUAL TO "N"; i PLUS 1)
+	SHOW i
+
+
+
+=== Project 5
+1. Buat variabel yang menampung inputan nilai max
+2. Buat sebuah perulangan untuk menampilkan nilai dari 1 sampai nilai terakhir yang diinputkan dengan kondisi dimana jika nilai bisa dibagi 3, maka mengeluarkan output "Fizz". Jika nilai bisa dibagi 5, maka mengeluarkan output "Buzz". Jika bisa dibagi 3 dan 5, maka menghasilkan output "Fizz Buzz"
+
+START PROGRAM
+
+STORE "max" with number value
+STORE "min" with number value
+
+SET "max" with any number value GREATER THAN 1
+SET "min" with 1
+
+FOR "min" LESS THAN EQUAL TO "max"
+	IF "min" DIVIDE 3 AND "min" DIVIDE 5 IS TRUE THEN
+		SHOW "Fizz Buzz""
+	ELSE IF "min" DIVIDE 3 IS TRUE THEN
+		SHOW "Fizz 
+	ELSE IF "min" DIVIDE 5 IS TRUE THEN
+		SHOW "Buzz"
+  ELSE
+    CONTINUE
+  END IF
+  "min" PLUS 1
+ENDFOR
+
+END PROGRAM

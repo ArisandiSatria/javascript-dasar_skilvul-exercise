@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Challenge</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="online-shop.html">Online Shop</a>
+      <a href="temperature-converter.html">Temperatur Converter</a>
+      <a href="cat-age.html">Cat Age</a>
+      <a href="convert-to-lowercase.html">Convert To Lowercase</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="temp">
+      <h1>Temperatur Converter</h1>
+      <div>
+        <div>
+          <h2>Fahrenheit To Celcius</h2>
+          <form>
+            <div>
+              <label for="temp">Fahrenheit Temperatur: </label>
+              <input type="text" id="frh-temp">
+            </div>
+            <button type="submit" onclick="submitFrhTemp(event)">Convert To Celcius</button>
+            <div id="frh-to-clc"></div>
+          </form>
+        </div>
+
+        <div>
+          <h2>Celcius To Fahrenheit</h2>
+          <form>
+            <div>
+              <label for="temp">Celcius Temperatur: </label>
+              <input type="text" id="clc-temp">
+            </div>
+            <button type="submit" onclick="submitClcTemp(event)">Convert To Fahrenheit</button>
+            <div id="clc-to-frh"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="../function.js"></script>
+</body>
+
+</html>

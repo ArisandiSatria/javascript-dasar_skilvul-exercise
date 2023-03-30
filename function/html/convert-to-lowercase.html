@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Challenge</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="online-shop.html">Online Shop</a>
+      <a href="temperature-converter.html">Temperatur Converter</a>
+      <a href="cat-age.html">Cat Age</a>
+      <a href="convert-to-lowercase.html">Convert To Lowercase</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="lower">
+      <h1>Convert To Lowercase</h1>
+      <div>
+        <form>
+          <div>
+            <label for="string">Sentence: </label>
+            <input type="text" id="string">
+          </div>
+          <button type="submit" onclick="convert(event)">Convert</button>
+          <div id="string-result"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="../function.js"></script>
+</body>
+
+</html>

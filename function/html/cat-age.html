@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Challenge</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="online-shop.html">Online Shop</a>
+      <a href="temperature-converter.html">Temperatur Converter</a>
+      <a href="cat-age.html">Cat Age</a>
+      <a href="convert-to-lowercase.html">Convert To Lowercase</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="cat-age">
+      <h1>Cat Age</h1>
+      <div>
+        <form>
+          <div>
+            <label for="cat-age">Cat Age: </label>
+            <input type="text" id="cat-age">
+          </div>
+          <button type="submit" onclick="submitCatAge(event)">Human Age</button>
+          <div id="human-age"></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="../function.js"></script>
+</body>
+
+</html>
