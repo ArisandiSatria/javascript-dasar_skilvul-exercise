@@ -25,7 +25,7 @@ for (let i = 0; i < 10; i++) {
 
 let result = "";
 
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i <= 20; i++) {
   if (i % 2 === 0) {
     result += `<p>Angka ${i} adalah GENAP</p>`;
   } else if (i % 2 !== 0) {
@@ -49,13 +49,13 @@ for (let i = 0; i < 20; i++) {
 
 // No 5
 
-let quiz = true;
+// let quiz = true;
 
-while (quiz) {
-  let question = prompt("Sebutkan kepanjangan dari nama IB!");
+// while (quiz) {
+//   let question = prompt("Sebutkan kepanjangan dari nama IB!");
 
-  if (question == "Impact Byte" || question == "impact byte") {
-    alert("Selamat jawaban kamu benar");
-    quiz = false;
-  }
-}
+//   if (question == "Impact Byte" || question == "impact byte") {
+//     alert("Selamat jawaban kamu benar");
+//     quiz = false;
+//   }
+// }
